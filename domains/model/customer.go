@@ -39,6 +39,21 @@ type CustomerReply struct {
 	Error      error
 }
 
+// ProductGateway represents the gateway for the Product entity.
+type CustomerGateway struct{}
+
+
+// NewCustomerGateway creates a new instance of the CustomerGateway.
+func NewCustomerGateway() *CustomerGateway {
+	return &CustomerGateway{}
+}
+
+
+
+
+
+
+
 func (c *Customer) ToJson() string {
 	jsonBytes, _ := json.Marshal(c)
 	x := fmt.Sprintf("%v", string(jsonBytes))

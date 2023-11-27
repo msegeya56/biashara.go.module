@@ -34,7 +34,14 @@ type Customer struct {
 
 
 
+// CustomerGateway represents the gateway for the Customer entity.
+type CustomerGateway struct{}
 
+
+// NewProductGateway creates a new instance of the ProductGateway.
+func NewCustomerGateway() *ProductGateway {
+	return &ProductGateway{}
+}
 
 
 
