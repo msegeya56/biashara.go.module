@@ -29,7 +29,9 @@ type Product struct {
 
 
 // ProductGateway represents the gateway for the Product entity.
-type ProductGateway struct{}
+type ProductGateway struct{
+	gorm.Model
+}
 
 
 // NewProductGateway creates a new instance of the ProductGateway.

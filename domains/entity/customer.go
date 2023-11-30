@@ -35,7 +35,9 @@ type Customer struct {
 
 
 // CustomerGateway represents the gateway for the Customer entity.
-type CustomerGateway struct{}
+type CustomerGateway struct{
+	gorm.Model
+}
 
 
 // NewProductGateway creates a new instance of the ProductGateway.
