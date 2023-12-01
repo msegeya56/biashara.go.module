@@ -5,7 +5,7 @@ package entity
 import (
 	"encoding/json"
 	"io"
-
+"gorm.io/gorm"
 	"errors"
 	"fmt"
 	"net/http"
